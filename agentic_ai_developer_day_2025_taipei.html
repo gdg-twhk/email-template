@@ -109,16 +109,17 @@ background-color: #fff;  border-top-right-radius: 4px; border-top-left-radius: 4
 
                         
     <tr style="background-color: #fff;"><td><table width="100%" border="0" cellPadding="0" cellSpacing="0"><tbody><tr><td><table width="100%" border="0" cellPadding="0" cellSpacing="0"><tbody><tr><td><table width="100%" border="0" cellPadding="0" cellSpacing="0"><tbody><tr><td><table width="100%" style="background:#fff" border="0" cellPadding="0" cellSpacing="0"><tbody><tr><td width="100%" style="font-size:16px;line-height:16px;padding:0 30px"><br />Hi ${$input.first().json.first_name} ${$input.first().json.last_name},<br /><br />活動當日請出示<strong> 報名序號</strong> 及 <strong>QR Code</strong> 給工作人員，以利加速報到<br /><br />
-<strong>報到時間：</strong> 12:50 PM - 1:30 PM (活動開始後 10 分鐘，1:30 PM 後將不再開放入場)<br />
+<strong>報到時間：</strong> 12:50 PM - 1:30 PM (活動開始後 10 分鐘，1:30 PM 後將不再開放入場)<br /><br />
 <strong>報到分流：</strong><br />
 - 報名序號1 ~ 130 號的與會者，請至「左側報到櫃檯」。<br />
 - 報名序號 131 ~ 267 號的與會者，請至「右側報到櫃檯」。<br />
 為響應環保，活動 Badge 將於離場時回收，感謝您的配合。<br /><br /></td></tr></tbody></table><div style="background-color:#F6F7F9;height:30px"></div><table style="background-color:#fff;width:100%"><tbody><tr><td style="padding:30px"><div style="margin:30px 0 20px;text-align:center;width:100%"><div style="font-size:24px;font-weight:800;padding:5px">Here is your ticket</div><div style="font-size:24px;display:inline-block"><span>報名序號為 <br /></span></div><strong  style="font-size:24px;font-weight:800;"> ${$input.first().json.number}</strong><div style="margin:auto;max-width:50%;padding:10px 0 10px">
-        <img alt="" src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/contentbuilder/ticket-pdf_ubEAOtd.png" style="max-width:100%"/><div style="margin:30px 0 20px;text-align:center;width:100%;position:relative;display:inline-block">
 
-<table align="center" width="300" border="0" cellspacing="0" cellpadding="0" background="https://qr.uppmkt.com/25iocpap/100515:2123315" style="background-size:cover; background-repeat:no-repeat;">
+</div></a><div style="display:block;text-align:center;margin:20px"></div></div></td></tr></tbody></table>
+
+<table align="center" width="500" border="0" cellspacing="0" cellpadding="0" background="https://qr.uppmkt.com/25iocpap/${$('Fields').first().json.event_id}:${$input.first().json.id}" style="background-size:cover; background-repeat:no-repeat;">
   <tr>
-    <td align="center" valign="middle" style="height:300px;">
+    <td align="center" valign="middle" style="height:500px;">
       <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_100,q_auto:good,w_100/v1/gcs/platform-data-goog/event_banners/GDG_Bevy_DefaultEventThumbnail_2_vaeskpB.png" width="25.5%" alt="Overlay Image"/>
     </td>
   </tr>
